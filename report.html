@@ -2,7 +2,6 @@
 <html lang="ar" dir="rtl">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
 
 *{
@@ -158,6 +157,93 @@ button{
         .negative-val { color: #ef4444; direction: ltr; display: inline-block; }
         /* Custom Modal Backdrop Styling */
         .modal-backdrop { background-color: rgba(15, 23, 42, 0.65); backdrop-filter: blur(4px); }
+       
+/* حل مشكلة الموبايل بالكامل */
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* كل العناصر */
+*{
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+/* أي div أو section */
+div,
+section,
+main,
+article{
+    width:100% !important;
+}
+
+/* الجداول */
+table{
+    display:block;
+    width:100% !important;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+/* الصور والرسومات */
+img,
+canvas,
+svg{
+    max-width:100% !important;
+    height:auto !important;
+}
+
+/* المدخلات */
+input,
+select,
+textarea{
+    width:100% !important;
+}
+
+/* الأزرار */
+button{
+    max-width:100%;
+}
+
+/* للموبايل */
+@media screen and (max-width:768px){
+
+    body{
+        padding:10px !important;
+    }
+
+    h1{
+        font-size:22px !important;
+    }
+
+    h2,
+    h3,
+    h4{
+        font-size:18px !important;
+    }
+
+    p,
+    td,
+    th,
+    label,
+    span{
+        font-size:14px !important;
+    }
+
+    .container,
+    .content,
+    .card,
+    .box,
+    .row{
+        width:100% !important;
+        display:block !important;
+        margin:0 auto !important;
+    }
+
+}
     </style>
 </head>
 <body class="flex h-screen overflow-hidden text-slate-800">
