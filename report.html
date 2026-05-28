@@ -78,6 +78,64 @@ button{
 }
 
 </style>
+       
+/* أي عنصر ياخد عرض الشاشة */
+div,
+section,
+table,
+canvas,
+iframe,
+img{
+    max-width:100% !important;
+}
+
+/* الجداول */
+table{
+    width:100% !important;
+    overflow-x:auto;
+    display:block;
+}
+
+/* الصور والرسوم */
+img,
+canvas{
+    width:100% !important;
+    height:auto !important;
+}
+
+/* الحقول */
+input,
+select,
+textarea{
+    width:100% !important;
+}
+
+/* الأزرار */
+button{
+    max-width:100% !important;
+}
+
+/* للموبايل */
+@media (max-width:768px){
+
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+    *{
+        max-width:100%;
+    }
+
+    .row,
+    .container,
+    .card,
+    .box{
+        width:100% !important;
+        display:block !important;
+    }
+
+}
 </head>
     <title>النظام المالي المتكامل (IFRS) | Financial System</title>
     <script src="https://cdn.tailwindcss.com"></script>
