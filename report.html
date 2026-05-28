@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-body{
-  margin:0;
-  padding:15px;
-  font-family:Arial;
-  box-sizing:border-box;
+*{
+    box-sizing:border-box;
 }
 
-/* تنسيق عام للأزرار */
+body{
+    margin:0;
+    padding:15px;
+    overflow-x:hidden;
+    font-family:Arial,sans-serif;
+}
+
+/* الجداول */
+table{
+    width:100% !important;
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+/* أي صور */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* أي input أو select */
+input,
+select,
+textarea,
 button{
-  max-width:90%;
+    max-width:100%;
 }
 
 /* للموبايل */
 @media (max-width:768px){
 
-  body{
-    padding:10px;
-  }
+    body{
+        padding:10px;
+    }
 
-  h1,h2,h3{
-    font-size:22px;
-  }
+    h1,h2,h3,h4{
+        font-size:18px !important;
+    }
 
-  p{
-    font-size:16px;
-    line-height:1.7;
-  }
+    p,
+    label,
+    td,
+    th,
+    input,
+    button,
+    select{
+        font-size:14px !important;
+    }
 
-  button{
-    font-size:14px !important;
-    padding:10px 18px !important;
-  }
+    table{
+        font-size:13px;
+    }
 
-}
+    button{
+        padding:10px 15px !important;
+    }
 
-/* للشاشات الكبيرة */
-@media (min-width:769px){
-
-  h1,h2,h3{
-    font-size:32px;
-  }
-
-  p{
-    font-size:18px;
-  }
+    .container,
+    .card,
+    .box,
+    .content{
+        width:100% !important;
+        padding:10px !important;
+    }
 
 }
 
